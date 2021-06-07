@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <!--Framework, Assembly Versioning-->
+    <PropertyGroup>
+        <AssemblyName>Stolle.Cosmos.Results.Tests</AssemblyName>
+        <RootNamespace>Stolle.Cosmos.Results.Tests</RootNamespace>
+        <TargetFramework>net5.0</TargetFramework>
+        <LangVersion>9</LangVersion>
+        <AssemblyVersion>5.0.0</AssemblyVersion>
+        <FileVersion>5.0.0</FileVersion>
+        <NeutralLanguage>en-US</NeutralLanguage>
+    </PropertyGroup>
+
+    <!--NuGet-->
+    <PropertyGroup>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <!--Project References-->
+    <ItemGroup>
+        <ProjectReference Include="..\Stolle.Cosmos.Results\Stolle.Cosmos.Results.csproj" />
+    </ItemGroup>
+
+    <!--Package References-->
+    <ItemGroup>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
+        <PackageReference Include="xunit" Version="2.4.0" />
+        <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+        <PackageReference Include="coverlet.collector" Version="1.0.1" />
+    </ItemGroup>
+
+    <!--Folders-->
+    <ItemGroup>
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,1 @@
+# Stolle.Cosmos.Results

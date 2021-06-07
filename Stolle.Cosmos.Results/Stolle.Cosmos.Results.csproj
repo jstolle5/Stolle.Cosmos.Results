@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <!--Assembly, Framework, Language-->
+    <PropertyGroup>
+        <AssemblyName>Stolle.Cosmos.Results</AssemblyName>
+        <RootNamespace>Stolle.Cosmos.Results</RootNamespace>
+        <TargetFramework>net5.0</TargetFramework>
+        <LangVersion>9</LangVersion>
+        <AssemblyVersion>5.0.0</AssemblyVersion>
+        <FileVersion>5.0.0</FileVersion>
+        <NeutralLanguage>en-US</NeutralLanguage>
+    </PropertyGroup>
+
+    <!--NuGet-->
+    <PropertyGroup>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <IncludeRefefencedProjects>true</IncludeRefefencedProjects>
+        <Title>Stolle.Cosmos.Results</Title>
+        <Authors>Jason Stolle</Authors>
+        <Description>Library for generating results from functions.</Description>
+        <PackageReleaseNotes>Migration from Stolle.Cosmos.Core</PackageReleaseNotes>
+        <NeutralLanguage>en-US</NeutralLanguage>
+        <PackageVersion>5.0.0</PackageVersion>
+    </PropertyGroup>
+
+    <!--Debug-->
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <DocumentationFile>bin\Debug\Stolle.Cosmos.Results.xml</DocumentationFile>
+    </PropertyGroup>
+
+    <!--Release-->
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+        <DocumentationFile>C:\Stolle\Software\Rider - V2\Packages\Stolle.Cosmos.Results.xml</DocumentationFile>
+        <OutputPath>C:\Stolle\Software\Rider - V2\Packages</OutputPath>
+    </PropertyGroup>
+
+    <!--Project References-->
+    <ItemGroup>
+    </ItemGroup>
+
+    <!--Package References-->
+    <ItemGroup>
+    </ItemGroup>
+
+</Project>

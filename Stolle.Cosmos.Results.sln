@@ -1,8 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stolle.Cosmos.Results", "Stolle.Cosmos.Results\Stolle.Cosmos.Results.csproj", "{9EAFD4D4-8551-4F97-A788-EDAD5570BEDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stolle.Cosmos.Results.Tests", "Stolle.Cosmos.Results.Tests\Stolle.Cosmos.Results.Tests.csproj", "{6D3D9584-A73E-4AD6-ADE0-64543709FDBD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9EAFD4D4-8551-4F97-A788-EDAD5570BEDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EAFD4D4-8551-4F97-A788-EDAD5570BEDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EAFD4D4-8551-4F97-A788-EDAD5570BEDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EAFD4D4-8551-4F97-A788-EDAD5570BEDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D3D9584-A73E-4AD6-ADE0-64543709FDBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D3D9584-A73E-4AD6-ADE0-64543709FDBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D3D9584-A73E-4AD6-ADE0-64543709FDBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D3D9584-A73E-4AD6-ADE0-64543709FDBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
