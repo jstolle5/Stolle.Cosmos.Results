@@ -4,6 +4,7 @@
 // Stolle.Cosmos.ResultsStolle.Cosmos.Results.TestsResultTests.cs
 #endregion
 
+using System;
 using Xunit;
 
 namespace Stolle.Cosmos.Results.Tests
@@ -11,7 +12,7 @@ namespace Stolle.Cosmos.Results.Tests
     public class ResultTests
     {
         [Fact]
-        public void ResultSuccessTest()
+        public void SuccessResultTest()
         {
             var result = SuccessMethod();
             Assert.True(result.Success);
@@ -19,10 +20,29 @@ namespace Stolle.Cosmos.Results.Tests
         
         
         [Fact]
-        public void ResultFailureTest()
+        public void FailureResultTest()
         {
             var result = FailureMethod();
             Assert.False(result.Success);
+        }
+        
+        
+        [Fact]
+        public void ContentResultTest()
+        {
+            var result = ContentMethod();
+            Assert.True(result.Success);
+            Assert.NotNull(result.Content);
+        }
+
+        private static IResult<string> ContentMethod()
+        {
+            return new Result<string>
+                   {
+                       Success = true,
+                       Message = "This is a method with content to return.",
+                       Content = "Hello world!"
+                   };
         }
 
         private static IResult SuccessMethod()
@@ -40,7 +60,8 @@ namespace Stolle.Cosmos.Results.Tests
             return new Result
                    {
                        Success = false,
-                       Message = "This method failed."
+                       Message = "This method failed.",
+                       Exception = new Exception()
                    };
         }
     }
